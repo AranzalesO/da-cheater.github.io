@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@800&family=Kanit:wght@600;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <title>Da Cheater | HTML and CSS Cheatsheet</title>
+
+</head>
+
+<body>
+    <!-- I want to do an amazing job with this one -->
+    <header>
+        <h1 class="header-title">HTML and CSS Cheatsheet</h1>
+        <h2 class="header-title">Just bringing you the coding cheatsheet you needed . . .</h2>
+    </header>
+
+    <!-- Navigation stuff -->
+    <nav id="navbar">
+        <span class="text-logo">Da Cheater</span>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Our objective</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections in Home -->
+    <div id="css-properties" class="properties">
+
+    </div>
+    <main>
+        <!-- <div id="html-properties" class="properties">
+
+        </div> -->
+    </main>
+
+    <!-- JS to the menu -->
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        // Get the navbar and css table element
+        var navbar = document.getElementById("navbar");
+        var cssBar = document.getElementById("css-properties");
+
+        // Get the offset position of the navbar and css table
+        var sticky = navbar.offsetTop;
+        var cssBar = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                cssBar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+                cssBar.classList.remove("sticky")
+            }
+        }
+    </script>
+</body>
+
+</html>
