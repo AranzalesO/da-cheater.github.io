@@ -9,11 +9,12 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@800&family=Kanit:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@800&family=Kanit:wght@600;800&family=Mukta&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="icon" href="src/svg/icon.svg" type="image/x-icon">
     <title>Da Cheater | HTML and CSS Cheatsheet</title>
 
 </head>
@@ -29,47 +30,310 @@
     <nav id="navbar">
         <span class="text-logo">Da Cheater</span>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Our objective</a></li>
+            <li><a href="#html-structure">Structure</a></li>
+            <li><a href="#semantic-html">Semantic</a></li>
         </ul>
     </nav>
 
-    <!-- Sections in Home -->
-    <div id="css-properties" class="properties">
+    <main class="wrapper">
+        <!-- CSS Tips section -->
+        <div class="css-sidebar">
+            <h2 class="table-heading">CSS Tips and Properties</h2>
 
-    </div>
-    <main>
-        <!-- <div id="html-properties" class="properties">
+            <button class="accordion">Deprecated atributes</button>
+            <div class="panel">
+                <table class="css-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Deprecated Attribute</th>
+                            <th scope="col">What to use instead</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tag">align</td>
+                            <td>Use float property instead</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">valign</td>
+                            <td>Use vertical-align property instead</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">char</td>
+                            <td>The correct answer is to use text-align: "x"; where x is the character to align on, but it’s not implemented anywhere yet. But this attribute isn’t supported either, so no big loss.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">bgcolor</td>
+                            <td>Use background property instead</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">cellpadding</td>
+                            <td>Using padding property instead</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">cellspacing</td>
+                            <td>Use border-spacing property instead</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">summary</td>
+                            <td>Use <span class="tag">&lt;caption&gt;</span> property instead</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">frame</td>
+                            <td>Use border property instead</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        </div> -->
-    </main>
+            <button class="accordion">CSS selectors</button>
+            <div class="panel">
+                <table class="css-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Selector</th>
+                            <th scope="col">Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tag">*</td>
+                            <td>All elements.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">div</td>
+                            <td>All div tags.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">div,p</td>
+                            <td>All divs and paragraphs.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">div p</td>
+                            <td>Paragraphs inside divs</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">div > p</td>
+                            <td>All p tags, one level deep in div</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">div + p</td>
+                            <td>p tags immediately after div</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">div ~ p</td>
+                            <td>p tags preceded by div</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">.classname</td>
+                            <td>All elements with class</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">#idname</td>
+                            <td>Element with ID</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">#idname</td>
+                            <td>Element with ID</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">div.classname</td>
+                            <td>divs with certain classname</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">div#idname</td>
+                            <td>div with certain ID</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">#idname*</td>
+                            <td>All elements inside #idname</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-    <!-- JS to the menu -->
-    <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {
-            myFunction()
-        };
+            <button class="accordion">Relative paths</button>
+            <div class="panel">
+                <table class="css-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Path</th>
+                            <th scope="col">Definition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tag">picture.jpg</td>
+                            <td>The "picture.jpg" file is located in the same folder as the current page.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">images/picture.jpg</td>
+                            <td>The "picture.jpg" file is located in the images folder in the current folder.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">/images/picture.jpg</td>
+                            <td>The "picture.jpg" file is located in the images folder at the root of the current web.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">../picture.jpg</td>
+                            <td>The "picture.jpg" file is located in the folder one level up from the current folder.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        // Get the navbar and css table element
-        var navbar = document.getElementById("navbar");
-        var cssBar = document.getElementById("css-properties");
+            <button class="accordion">The box model</button>
+            <div class="panel">
+                <table class="css-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Propertie</th>
+                            <th scope="col">Definition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tag">height</td>
+                            <td>Sets the height of an element. If <span class="tag">height: auto;</span> the element will automatically adjust its height to allow its content to be displayed correctly.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">width</td>
+                            <td>specifies the width of the element's content area.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">padding</td>
+                            <td>Creates space around an element's content, inside of any defined borders.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">margin</td>
+                            <td>Creates space around elements, outside of any defined borders.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">border</td>
+                            <td>The CSS <span class="tag">border</span> properties allows you to specify the style, width, and color of an element's border.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-        // Get the offset position of the navbar and css table
-        var sticky = navbar.offsetTop;
-        var cssBar = navbar.offsetTop;
+        <!-- HTML Structure -->
+        <div class="html">
+            <section id="html-structure">
+                <h2 class="table-heading">HTML Structure</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tag">&lt;html&gt;</td>
+                            <td>HTML Tag</td>
+                            <td>Represents the root of an HTML document and contains all other HTML elements. Should include the lang="en" attribute.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;head&gt;</td>
+                            <td>Head Tag</td>
+                            <td>Container for metadata that is placed between the <span class="tag">&lt;html&gt;</span> and <span class="tag">&lt;body&gt;</span> tag.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;meta&gt;</td>
+                            <td>Meta Tag</td>
+                            <td>Defines meta data about an HTML document. The charset attribute specifies the character encoding of the HTML document. HTML5 encourages use of the UTF-8 character set.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;title&gt;</td>
+                            <td>Title Tag</td>
+                            <td>Defines the title of the document and is displayed in the browser's toolbar.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;link&gt;</td>
+                            <td>Link Tag</td>
+                            <td>Specifies relationships between the current document and an external resource. This could be a stylesheet, external fonts, etc.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;body&gt;</td>
+                            <td>Body Tag</td>
+                            <td>Defines the document's body and contains all the contents of an HTML document.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-                cssBar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-                cssBar.classList.remove("sticky")
+            <section id="semantic-html">
+                <h2 class="table-heading">Semantic HTML</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tag">&lt;header&gt;</td>
+                            <td>Header Tag</td>
+                            <td>Represents a container for introductory content or a set of navigational links. You can have several <span class="tag">&lt;header&gt;</span> elements in one HTML document, however it should not be placed in a <span class="tag">&lt;footer&gt;</span>,
+                                <span class="tag">&lt;address&gt;</span> or another <span class="tag">&lt;header&gt;</span> element.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;nav&gt;</td>
+                            <td>Nav Tag</td>
+                            <td>Defines a set of navigation links</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;article&gt;</td>
+                            <td>Article Tag</td>
+                            <td>Specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the site and still make sense.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;section&gt;</td>
+                            <td>Section Tag</td>
+                            <td>Defines a section in a document.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;footer&gt;</td>
+                            <td>Footer Tag</td>
+                            <td>Defines a footer for a document or section.Typically contains authorship information, copyright information, contact information, sitemap, back to top links, and/or related documents.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;figure&gt;</td>
+                            <td>Figure Tag</td>
+                            <td>Specifies self-contained content, like illustrations, diagrams, photos, code, listings, etc.</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;figcaption&gt;</td>
+                            <td>Figcaption Tag</td>
+                            <td>Defines a caption for a <span class="tag">&lt;html&gt;</span> element.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <script>
+            // CSS Sidebar acordion functionality
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
             }
-        }
-    </script>
+        </script>
+    </main>
 </body>
 
 </html>

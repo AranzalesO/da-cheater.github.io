@@ -1,0 +1,246 @@
+/* Header and headings section */
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url("https://images.pexels.com/photos/7092525/pexels-photo-7092525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    text-align: center;
+    height: 40rem;
+    background-size: cover;
+    color: #fff;
+}
+
+header .header-title {
+    font-family: 'Kanit', sans-serif;
+}
+
+header h1 {
+    padding-top: 15rem;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+header h2 {
+    padding-top: 5px;
+    font-size: 20px;
+    overflow: hidden;
+    border-right: .10rem solid #fff;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 50%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+
+/* Nav section */
+
+nav {
+    overflow: hidden;
+    background-color: #101338;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    margin-left: 50%;
+    position: relative;
+    top: -15px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Encode Sans SC', monospace;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    transition: 0.2s ease-in;
+}
+
+nav .text-logo {
+    font-family: monospace, 'Encode Sans SC';
+    color: rgb(255, 255, 255);
+    margin-right: 50%;
+    font-size: 35px;
+    position: relative;
+    top: 7px;
+}
+
+
+/* = Main content = */
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.html,
+.css-sidebar {
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.html {
+    width: 60%;
+    height: 150vh;
+    box-sizing: border-box;
+}
+
+
+/* CSS Cheatsheet */
+
+.css-sidebar {
+    width: 35%;
+    height: 75vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 52px;
+    overflow: scroll;
+    border: 1px solid #999;
+    box-shadow: 10px 5px 5px rgb(121, 115, 115);
+    z-index: 0;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 8px;
+    width: 100%;
+    min-width: 100px;
+    height: 45px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+    font-family: Mukta, monospace;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+/* HTML Tables */
+
+.table-heading {
+    color: #101338;
+    float: center;
+    font-size: 25px;
+    font-family: 'Encode Sans SC', monospace;
+    margin: 25px 0;
+}
+
+.html table {
+    border-collapse: collapse;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Mukta, monospace;
+}
+
+.html table td,
+th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+.html table th {
+    background-color: #101338;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #eee;
+}
+
+tbody tr:nth-child(odd):hover {
+    background-color: #eee;
+}
+
+.tag {
+    color: #101338;
+    font-style: italic;
+}
+
+#semantic-html {
+    margin: 40px 0;
+}
+
+
+/* CSS Tables */
+
+.panel .css-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: Mukta, monospace;
+    min-width: 100px;
+    width: 400px;
+}
+
+.panel .css-table td,
+th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+.panel .css-table th {
+    background-color: #101338;
+    color: white;
+}

@@ -58,12 +58,6 @@ label,
 legend,
 table,
 caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
 article,
 aside,
 canvas,
@@ -104,7 +98,6 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 section {
     display: block;
 }
@@ -129,9 +122,4 @@ q:before,
 q:after {
     content: '';
     content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
 }
