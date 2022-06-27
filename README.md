@@ -12,7 +12,6 @@
 <p align=”center”>
     <img width=”800" height=”800" src=”https://i.postimg.cc/xTgbSJgG/Home.png" alt=”My home”>
 </p>
-[![Home.png](https://i.postimg.cc/xTgbSJgG/Home.png)](https://postimg.cc/svQ2Y2k1)
 
 Where you'll find anything related to the relative paths to connect to your files, concise information about the box model, selectors, tips about deprecated atributes in css, and good practices in HTML5 in case you need it.
 
