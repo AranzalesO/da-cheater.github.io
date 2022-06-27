@@ -6,11 +6,15 @@
 </h2>
 
 <p align=”center”>
-    <img width=”800" height=”800" src=”[https://user-images.githubusercontent.com/71298422/175796873-e0b871ba-de7d-4d5e-bec4-499f2a672833.png](https://i.postimg.cc/5Nzk7J3M/Header.png)" alt=”My header”>
+    
+    [![Header.png](https://i.postimg.cc/5Nzk7J3M/Header.png)](https://postimg.cc/JG1q09vT)
+    
 </p>
 
 <p align=”center”>
-    <img width=”800" height=”800" src=”https://i.postimg.cc/xTgbSJgG/Home.png" alt=”My home”>
+    
+    [![Home.png](https://i.postimg.cc/xTgbSJgG/Home.png)](https://postimg.cc/svQ2Y2k1)
+    
 </p>
 
 Where you'll find anything related to the relative paths to connect to your files, concise information about the box model, selectors, tips about deprecated atributes in css, and good practices in HTML5 in case you need it.
@@ -22,4 +26,4 @@ Where you'll find anything related to the relative paths to connect to your file
 
 - 💬 If you have any question/feedback, please do not hesitate to reach out to me!
 
-[![Home.png](https://i.postimg.cc/xTgbSJgG/Home.png)](https://postimg.cc/svQ2Y2k1)
+
