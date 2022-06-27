@@ -6,11 +6,11 @@
 </h2>
 
 <p align=”center”>
-    <img width=”800" height=”800" src=”https://user-images.githubusercontent.com/71298422/175796873-e0b871ba-de7d-4d5e-bec4-499f2a672833.png" alt=”My header”>
+    [![Header.png](https://i.postimg.cc/5Nzk7J3M/Header.png)](https://postimg.cc/JG1q09vT)
 </p>
 
 <p align=”center”>
-    <img width=”800" height=”800" src=”https://user-images.githubusercontent.com/71298422/175796883-8c319f3d-b4de-4817-b20f-5b6c8d530705.png" alt=”My home”>
+    [![Home.png](https://i.postimg.cc/xTgbSJgG/Home.png)](https://postimg.cc/svQ2Y2k1)
 </p>
 
 Where you'll find anything related to the relative paths to connect to your files, concise information about the box model, selectors, tips about deprecated atributes in css, and good practices in HTML5 in case you need it.
