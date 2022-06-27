@@ -5,16 +5,10 @@
     The most reliable HTML and CSS cheat sheet 📃 for developers 💻,
 </h2>
 
-<p align=”center”>
-    
-    [![Header.png](https://i.postimg.cc/5Nzk7J3M/Header.png)](https://postimg.cc/JG1q09vT)
-    
-</p>
+[![Header.png](https://i.postimg.cc/5Nzk7J3M/Header.png)](https://postimg.cc/JG1q09vT)
 
 <p align=”center”>
-    
     [![Home.png](https://i.postimg.cc/xTgbSJgG/Home.png)](https://postimg.cc/svQ2Y2k1)
-    
 </p>
 
 Where you'll find anything related to the relative paths to connect to your files, concise information about the box model, selectors, tips about deprecated atributes in css, and good practices in HTML5 in case you need it.
